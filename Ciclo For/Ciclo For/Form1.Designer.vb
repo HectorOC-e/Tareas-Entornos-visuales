@@ -52,7 +52,7 @@ Partial Class Form1
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(26, 47)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(306, 337)
+        Me.GroupBox1.Size = New System.Drawing.Size(318, 304)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos para calcular"
