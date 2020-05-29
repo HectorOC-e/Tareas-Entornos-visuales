@@ -62,7 +62,7 @@ Partial Class Form1
         Me.txtFinTabla.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.txtFinTabla.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFinTabla.ForeColor = System.Drawing.SystemColors.Window
-        Me.txtFinTabla.Location = New System.Drawing.Point(6, 192)
+        Me.txtFinTabla.Location = New System.Drawing.Point(27, 162)
         Me.txtFinTabla.Name = "txtFinTabla"
         Me.txtFinTabla.Size = New System.Drawing.Size(157, 25)
         Me.txtFinTabla.TabIndex = 7
@@ -72,7 +72,7 @@ Partial Class Form1
         Me.txtValorTabla.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.txtValorTabla.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtValorTabla.ForeColor = System.Drawing.SystemColors.Window
-        Me.txtValorTabla.Location = New System.Drawing.Point(8, 108)
+        Me.txtValorTabla.Location = New System.Drawing.Point(29, 78)
         Me.txtValorTabla.Name = "txtValorTabla"
         Me.txtValorTabla.Size = New System.Drawing.Size(157, 25)
         Me.txtValorTabla.TabIndex = 6
@@ -82,7 +82,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(5, 171)
+        Me.Label2.Location = New System.Drawing.Point(26, 141)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(162, 18)
         Me.Label2.TabIndex = 5
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(5, 87)
+        Me.Label1.Location = New System.Drawing.Point(26, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(193, 18)
         Me.Label1.TabIndex = 4
@@ -117,9 +117,9 @@ Partial Class Form1
         Me.lstDato.ForeColor = System.Drawing.SystemColors.InactiveBorder
         Me.lstDato.FormattingEnabled = True
         Me.lstDato.ItemHeight = 18
-        Me.lstDato.Location = New System.Drawing.Point(421, 59)
+        Me.lstDato.Location = New System.Drawing.Point(374, 59)
         Me.lstDato.Name = "lstDato"
-        Me.lstDato.Size = New System.Drawing.Size(63, 292)
+        Me.lstDato.Size = New System.Drawing.Size(76, 292)
         Me.lstDato.TabIndex = 1
         '
         'lstX
@@ -129,9 +129,9 @@ Partial Class Form1
         Me.lstX.ForeColor = System.Drawing.SystemColors.InactiveBorder
         Me.lstX.FormattingEnabled = True
         Me.lstX.ItemHeight = 18
-        Me.lstX.Location = New System.Drawing.Point(490, 59)
+        Me.lstX.Location = New System.Drawing.Point(475, 59)
         Me.lstX.Name = "lstX"
-        Me.lstX.Size = New System.Drawing.Size(41, 292)
+        Me.lstX.Size = New System.Drawing.Size(56, 292)
         Me.lstX.TabIndex = 2
         '
         'lstMultiplo
@@ -141,9 +141,9 @@ Partial Class Form1
         Me.lstMultiplo.ForeColor = System.Drawing.SystemColors.InactiveBorder
         Me.lstMultiplo.FormattingEnabled = True
         Me.lstMultiplo.ItemHeight = 18
-        Me.lstMultiplo.Location = New System.Drawing.Point(537, 59)
+        Me.lstMultiplo.Location = New System.Drawing.Point(555, 59)
         Me.lstMultiplo.Name = "lstMultiplo"
-        Me.lstMultiplo.Size = New System.Drawing.Size(63, 292)
+        Me.lstMultiplo.Size = New System.Drawing.Size(97, 292)
         Me.lstMultiplo.TabIndex = 3
         '
         'lstResultado
@@ -153,9 +153,9 @@ Partial Class Form1
         Me.lstResultado.ForeColor = System.Drawing.SystemColors.InactiveBorder
         Me.lstResultado.FormattingEnabled = True
         Me.lstResultado.ItemHeight = 18
-        Me.lstResultado.Location = New System.Drawing.Point(644, 59)
+        Me.lstResultado.Location = New System.Drawing.Point(750, 59)
         Me.lstResultado.Name = "lstResultado"
-        Me.lstResultado.Size = New System.Drawing.Size(108, 292)
+        Me.lstResultado.Size = New System.Drawing.Size(122, 292)
         Me.lstResultado.TabIndex = 4
         '
         'lstIgual
@@ -165,9 +165,9 @@ Partial Class Form1
         Me.lstIgual.ForeColor = System.Drawing.SystemColors.InactiveBorder
         Me.lstIgual.FormattingEnabled = True
         Me.lstIgual.ItemHeight = 18
-        Me.lstIgual.Location = New System.Drawing.Point(606, 59)
+        Me.lstIgual.Location = New System.Drawing.Point(679, 59)
         Me.lstIgual.Name = "lstIgual"
-        Me.lstIgual.Size = New System.Drawing.Size(32, 292)
+        Me.lstIgual.Size = New System.Drawing.Size(48, 292)
         Me.lstIgual.TabIndex = 5
         '
         'Label3
@@ -199,7 +199,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(780, 407)
+        Me.ClientSize = New System.Drawing.Size(902, 407)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lstIgual)
