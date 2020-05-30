@@ -362,7 +362,7 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.DimGray
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(280, 214)
+        Me.Button1.Location = New System.Drawing.Point(282, 214)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(93, 37)
         Me.Button1.TabIndex = 29
