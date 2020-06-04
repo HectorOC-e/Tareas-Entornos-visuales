@@ -34,10 +34,10 @@ Partial Class MenuPrincipal
         Me.CalcularElNumeroDeAñosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CalcularElMontoFinalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CalcularMontoActualToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CalcularMontoFuturoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CalcularToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CapitalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TasaDeInteresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PeriodoDeTiempoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -89,7 +89,7 @@ Partial Class MenuPrincipal
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Maroon
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalculadoraDeImpuestoToolStripMenuItem, Me.CToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -102,7 +102,7 @@ Partial Class MenuPrincipal
         '
         Me.CalculadoraDeImpuestoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcularMontoInicialToolStripMenuItem, Me.CalcularTasaDeInteresToolStripMenuItem, Me.CalcularElNumeroDeAñosToolStripMenuItem, Me.CalcularElMontoFinalToolStripMenuItem})
         Me.CalculadoraDeImpuestoToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CalculadoraDeImpuestoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CalculadoraDeImpuestoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.CalculadoraDeImpuestoToolStripMenuItem.Name = "CalculadoraDeImpuestoToolStripMenuItem"
         Me.CalculadoraDeImpuestoToolStripMenuItem.Size = New System.Drawing.Size(211, 32)
         Me.CalculadoraDeImpuestoToolStripMenuItem.Text = "Interes Compuesto"
@@ -145,56 +145,61 @@ Partial Class MenuPrincipal
         '
         'CToolStripMenuItem
         '
-        Me.CToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcularMontoActualToolStripMenuItem, Me.CalcularMontoFuturoToolStripMenuItem, Me.CalcularToolStripMenuItem, Me.CalcularPeriodoDeTiempoToolStripMenuItem})
+        Me.CToolStripMenuItem.BackColor = System.Drawing.Color.Maroon
+        Me.CToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CapitalToolStripMenuItem, Me.TasaDeInteresToolStripMenuItem, Me.PeriodoDeTiempoToolStripMenuItem})
         Me.CToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.CToolStripMenuItem.Name = "CToolStripMenuItem"
         Me.CToolStripMenuItem.Size = New System.Drawing.Size(169, 32)
         Me.CToolStripMenuItem.Text = "Interes Simple"
         '
-        'CalcularMontoActualToolStripMenuItem
+        'Button1
         '
-        Me.CalcularMontoActualToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CalcularMontoActualToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CalcularMontoActualToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CalcularMontoActualToolStripMenuItem.Name = "CalcularMontoActualToolStripMenuItem"
-        Me.CalcularMontoActualToolStripMenuItem.Size = New System.Drawing.Size(334, 28)
-        Me.CalcularMontoActualToolStripMenuItem.Text = "Calcular Monto Actual"
+        Me.Button1.BackColor = System.Drawing.Color.Maroon
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(48, 272)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(103, 48)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "SALIR"
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'CalcularMontoFuturoToolStripMenuItem
+        'CapitalToolStripMenuItem
         '
-        Me.CalcularMontoFuturoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CalcularMontoFuturoToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CalcularMontoFuturoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CalcularMontoFuturoToolStripMenuItem.Name = "CalcularMontoFuturoToolStripMenuItem"
-        Me.CalcularMontoFuturoToolStripMenuItem.Size = New System.Drawing.Size(334, 28)
-        Me.CalcularMontoFuturoToolStripMenuItem.Text = "Calcular Monto Futuro"
+        Me.CapitalToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CapitalToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CapitalToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CapitalToolStripMenuItem.Name = "CapitalToolStripMenuItem"
+        Me.CapitalToolStripMenuItem.Size = New System.Drawing.Size(247, 28)
+        Me.CapitalToolStripMenuItem.Text = "Capital"
         '
-        'CalcularToolStripMenuItem
+        'TasaDeInteresToolStripMenuItem
         '
-        Me.CalcularToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CalcularToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CalcularToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CalcularToolStripMenuItem.Name = "CalcularToolStripMenuItem"
-        Me.CalcularToolStripMenuItem.Size = New System.Drawing.Size(334, 28)
-        Me.CalcularToolStripMenuItem.Text = "Calcular Tasa de interes"
+        Me.TasaDeInteresToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.TasaDeInteresToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TasaDeInteresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TasaDeInteresToolStripMenuItem.Name = "TasaDeInteresToolStripMenuItem"
+        Me.TasaDeInteresToolStripMenuItem.Size = New System.Drawing.Size(247, 28)
+        Me.TasaDeInteresToolStripMenuItem.Text = "Tasa de Interes"
         '
-        'CalcularPeriodoDeTiempoToolStripMenuItem
+        'PeriodoDeTiempoToolStripMenuItem
         '
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.Name = "CalcularPeriodoDeTiempoToolStripMenuItem"
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.Size = New System.Drawing.Size(334, 28)
-        Me.CalcularPeriodoDeTiempoToolStripMenuItem.Text = "Calcular Periodo De Tiempo"
+        Me.PeriodoDeTiempoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.PeriodoDeTiempoToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PeriodoDeTiempoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PeriodoDeTiempoToolStripMenuItem.Name = "PeriodoDeTiempoToolStripMenuItem"
+        Me.PeriodoDeTiempoToolStripMenuItem.Size = New System.Drawing.Size(247, 28)
+        Me.PeriodoDeTiempoToolStripMenuItem.Text = "Periodo de tiempo"
         '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Maroon
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(564, 321)
+        Me.ClientSize = New System.Drawing.Size(564, 328)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -226,8 +231,8 @@ Partial Class MenuPrincipal
     Friend WithEvents CalcularTasaDeInteresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CalcularElNumeroDeAñosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CalcularElMontoFinalToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CalcularMontoActualToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CalcularMontoFuturoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CalcularToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CalcularPeriodoDeTiempoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
+    Friend WithEvents CapitalToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TasaDeInteresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PeriodoDeTiempoToolStripMenuItem As ToolStripMenuItem
 End Class

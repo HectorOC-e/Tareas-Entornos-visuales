@@ -1,19 +1,19 @@
 ﻿Imports System.ComponentModel
 
-Public Class CalcularTiempo
+Public Class Tiempo_ISimple
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        Dim Tasa, Años, MontoFinal, MontoInicial As Double
+        Dim Tasa, Años, ValorInteres, Capital As Double
 
-        If txtMontoInicial.Text = "" Then
-            MsgBox("escriba el monto inicial", vbOK + vbExclamation, "Mensaje especial")
-        ElseIf Not IsNumeric(txtMontoInicial.Text) Then
-            MsgBox("escriba un monto inicial valida", vbOK + vbExclamation, "Mensaje especial")
-            txtMontoInicial.Text = ""
-        ElseIf (Val(txtMontoInicial.Text)) < 0 Then
+        If txtValorInteres.Text = "" Then
+            MsgBox("escriba el Valor de los intereses", vbOK + vbExclamation, "Mensaje especial")
+        ElseIf Not IsNumeric(txtValorInteres.Text) Then
+            MsgBox("escriba un valor de interes valido", vbOK + vbExclamation, "Mensaje especial")
+            txtValorInteres.Text = ""
+        ElseIf (Val(txtValorInteres.Text)) < 0 Then
             MsgBox("el valor es negativo, ingrese un valor positivo")
-            txtMontoInicial.Text = ""
-        ElseIf IsNumeric(txtMontoInicial.Text) Then
-            MontoInicial = Val(txtMontoInicial.Text)
+            txtValorInteres.Text = ""
+        ElseIf IsNumeric(txtValorInteres.Text) Then
+            ValorInteres = Val(txtValorInteres.Text)
         End If
 
         If txtTasaInteres.Text = "" Then
@@ -28,37 +28,36 @@ Public Class CalcularTiempo
             Tasa = Val(txtTasaInteres.Text)
         End If
 
-        If txtMontoFinal.Text = "" Then
-            MsgBox("escriba el monto final", vbOK + vbExclamation, "Mensaje especial")
-        ElseIf Not IsNumeric(txtMontoFinal.Text) Then
-            MsgBox("escriba un monto valido", vbOK + vbExclamation, "Mensaje especial")
-            txtMontoFinal.Text = ""
-        ElseIf (Val(txtMontoFinal.Text)) < 0 Then
+        If txtCapital.Text = "" Then
+            MsgBox("escriba el capital", vbOK + vbExclamation, "Mensaje especial")
+        ElseIf Not IsNumeric(txtCapital.Text) Then
+            MsgBox("escriba un capital valido", vbOK + vbExclamation, "Mensaje especial")
+            txtCapital.Text = ""
+        ElseIf (Val(txtCapital.Text)) < 0 Then
             MsgBox("el valor es negativo, ingrese un valor positivo")
-            txtMontoFinal.Text = ""
-        ElseIf IsNumeric(txtMontoFinal.Text) Then
-            MontoFinal = Val(txtMontoFinal.Text)
+            txtCapital.Text = ""
+        ElseIf IsNumeric(txtCapital.Text) Then
+            Capital = Val(txtCapital.Text)
         End If
 
 
         Try
-            If Me.ValidateChildren And txtTasaInteres.Text <> String.Empty And txtMontoFinal.Text <> String.Empty And txtMontoInicial.Text <> String.Empty Then
-                Años = (Math.Log(MontoFinal / MontoInicial)) / (Math.Log(1 + (Tasa / 100)))
-                txtAños.Text = Años
+            If Me.ValidateChildren And txtTasaInteres.Text <> String.Empty And txtValorInteres.Text <> String.Empty And txtTasaInteres.Text <> String.Empty Then
+                Años = ValorInteres / ((Tasa / 100) * Capital)
+                txtTiempo.Text = Años
             Else
                 MessageBox.Show("Revise los datos ingresados", "Error al Calcular", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
     End Sub
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
-        txtAños.Clear()
-        txtMontoFinal.Clear()
+        txtTiempo.Clear()
+        txtValorInteres.Clear()
         txtTasaInteres.Clear()
-        txtMontoInicial.Clear()
+        txtCapital.Clear()
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
@@ -66,7 +65,7 @@ Public Class CalcularTiempo
         Me.Close()
     End Sub
 
-    Private Sub txtMontoInicial_TextChanged(sender As Object, e As EventArgs) Handles txtMontoInicial.TextChanged
+    Private Sub txtValorInteres_TextChanged(sender As Object, e As EventArgs) Handles txtValorInteres.TextChanged
 
     End Sub
 
@@ -74,11 +73,11 @@ Public Class CalcularTiempo
 
     End Sub
 
-    Private Sub txtMontoFinal_TextChanged(sender As Object, e As EventArgs) Handles txtMontoFinal.TextChanged
+    Private Sub txtCapital_TextChanged(sender As Object, e As EventArgs) Handles txtCapital.TextChanged
 
     End Sub
 
-    Private Sub txtMontoInicial_Validating(sender As Object, e As CancelEventArgs) Handles txtMontoInicial.Validating
+    Private Sub txtValorInteres_Validating(sender As Object, e As CancelEventArgs) Handles txtValorInteres.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.ErrorValidacion.SetError(sender, "")
         Else
@@ -94,7 +93,7 @@ Public Class CalcularTiempo
         End If
     End Sub
 
-    Private Sub txtMontoFinal_Validating(sender As Object, e As CancelEventArgs) Handles txtMontoFinal.Validating
+    Private Sub txtCapital_Validating(sender As Object, e As CancelEventArgs) Handles txtCapital.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.ErrorValidacion.SetError(sender, "")
         Else
@@ -102,22 +101,21 @@ Public Class CalcularTiempo
         End If
     End Sub
 
-    Private Sub txtMontoInicial_MouseHover(sender As Object, e As EventArgs) Handles txtMontoInicial.MouseHover
-        ToolTip.SetToolTip(txtMontoInicial, "Ingrese el monto que tiene de inicio")
-        ToolTip.ToolTipTitle = "Monto Inicial"
+    Private Sub txtValorInteres_MouseHover(sender As Object, e As EventArgs) Handles txtValorInteres.MouseHover
+        ToolTip.SetToolTip(txtValorInteres, "Ingrese el Valor De los Interes")
+        ToolTip.ToolTipTitle = "Valor interes"
         ToolTip.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
     Private Sub txtTasaInteres_MouseHover(sender As Object, e As EventArgs) Handles txtTasaInteres.MouseHover
-        ToolTip.SetToolTip(txtTasaInteres, "Ingrese la tasa de interes")
-        ToolTip.ToolTipTitle = "Tasa de Interes"
+        ToolTip.SetToolTip(txtTasaInteres, "Ingrese la Tasa de Interes")
+        ToolTip.ToolTipTitle = "Monto Inicial"
         ToolTip.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
-    Private Sub txtMontoFinal_MouseHover(sender As Object, e As EventArgs) Handles txtMontoFinal.MouseHover
-        ToolTip.SetToolTip(txtMontoFinal, "Ingrese el monto que obtendra al final")
-        ToolTip.ToolTipTitle = "Monto Final"
+    Private Sub txtCapital_MouseHover(sender As Object, e As EventArgs) Handles txtCapital.MouseHover
+        ToolTip.SetToolTip(txtCapital, "Ingrese el Valor Del Capital")
+        ToolTip.ToolTipTitle = "Valor Capital"
         ToolTip.ToolTipIcon = ToolTipIcon.Info
     End Sub
-
 End Class

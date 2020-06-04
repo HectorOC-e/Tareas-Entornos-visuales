@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class TasaDeInteres
+Public Class TasaDeInteresCompuesto
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         Dim Tasa, Años, MontoFinal, MontoInicial As Double
 

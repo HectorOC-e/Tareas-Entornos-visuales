@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalcularTiempo.Designer.vb">
-      <DependentUpon>CalcularTiempo.vb</DependentUpon>
+    <Compile Include="CalcularTiempo_ICompuesto.Designer.vb">
+      <DependentUpon>CalcularTiempo_ICompuesto.vb</DependentUpon>
     </Compile>
-    <Compile Include="CalcularTiempo.vb">
+    <Compile Include="CalcularTiempo_ICompuesto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.vb">
@@ -84,6 +84,18 @@
     </Compile>
     <Compile Include="MenuPrincipal.Designer.vb">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capital_ISimple.Designer.vb">
+      <DependentUpon>Capital_ISimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capital_ISimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MontoFinal_ICompuesto.Designer.vb">
+      <DependentUpon>MontoFinal_ICompuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MontoFinal_ICompuesto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MontoInicialCompuesto.Designer.vb">
@@ -105,19 +117,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="TasaDeInteres.Designer.vb">
-      <DependentUpon>TasaDeInteres.vb</DependentUpon>
+    <Compile Include="TasaDeInteresCompuesto.Designer.vb">
+      <DependentUpon>TasaDeInteresCompuesto.vb</DependentUpon>
     </Compile>
-    <Compile Include="TasaDeInteres.vb">
+    <Compile Include="TasaDeInteresCompuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasaInteres_Isimple.Designer.vb">
+      <DependentUpon>TasaInteres_Isimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TasaInteres_Isimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiempo_ISimple.Designer.vb">
+      <DependentUpon>Tiempo_ISimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tiempo_ISimple.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CalcularTiempo.resx">
-      <DependentUpon>CalcularTiempo.vb</DependentUpon>
+    <EmbeddedResource Include="CalcularTiempo_ICompuesto.resx">
+      <DependentUpon>CalcularTiempo_ICompuesto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capital_ISimple.resx">
+      <DependentUpon>Capital_ISimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MontoFinal_ICompuesto.resx">
+      <DependentUpon>MontoFinal_ICompuesto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MontoInicialCompuesto.resx">
       <DependentUpon>MontoInicialCompuesto.vb</DependentUpon>
@@ -128,8 +158,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TasaDeInteres.resx">
-      <DependentUpon>TasaDeInteres.vb</DependentUpon>
+    <EmbeddedResource Include="TasaDeInteresCompuesto.resx">
+      <DependentUpon>TasaDeInteresCompuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasaInteres_Isimple.resx">
+      <DependentUpon>TasaInteres_Isimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiempo_ISimple.resx">
+      <DependentUpon>Tiempo_ISimple.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
