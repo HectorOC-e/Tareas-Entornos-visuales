@@ -1,14 +1,13 @@
 ﻿Public Class Calculadora
     Dim num1, num2 As Double
-    Dim op As String
+    Dim op, masmenos As String
     Private Sub RegresarAlMenuPrincipalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegresarAlMenuPrincipalToolStripMenuItem.Click
         MenuPrincipal.Show()
         Me.Close()
     End Sub
 
     Private Sub SalirTodo_Click(sender As Object, e As EventArgs) Handles SalirTodo.Click
-        MenuPrincipal.Close()
-        Me.Close()
+        End
     End Sub
 
     Private Sub btnUno_Click(sender As Object, e As EventArgs) Handles btnUno.Click
@@ -53,6 +52,7 @@
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
         txtResultado.Clear()
+        txtResultado.Text = ""
         btnPunto.Enabled = True
 
     End Sub
@@ -84,7 +84,7 @@
     Private Sub btnRaiz_Click(sender As Object, e As EventArgs) Handles btnRaiz.Click
         num1 = Val(txtResultado.Text)
         txtResultado.Text = num1 ^ (1 / 2)
-        lstbHistorial.Items.Add(txtResultado.Text & " = " & num1 & "√")
+        lstbHistorial.Items.Add("√" & num1 & " = " & txtResultado.Text)
         btnPunto.Enabled = True
     End Sub
 
@@ -105,35 +105,41 @@
         btnPunto.Enabled = False
     End Sub
 
+    Private Sub btnMasMenos_Click(sender As Object, e As EventArgs) Handles btnMasMenos.Click
+        num1 = Val(txtResultado.Text)
+        txtResultado.Text = num1 * -1
+        lstbHistorial.Items.Add("+/- " & num1 & " = " & txtResultado.Text)
+        btnPunto.Enabled = True
+    End Sub
+
     Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
         num2 = Val(txtResultado.Text)
 
         If op = "+" Then
-            txtResultado.Text = num1 + num2
-            lstbHistorial.Items.Add(txtResultado.Text & " = " & num2 & " + " & num1)
+                txtResultado.Text = num1 + num2
+                lstbHistorial.Items.Add(num1 & " + " & num2 & " = " & txtResultado.Text)
 
-        End If
-
-        If op = "-" Then
-            txtResultado.Text = num1 - num2
-            lstbHistorial.Items.Add(txtResultado.Text & " = " & num2 & " - " & num1)
-        End If
-
-
-        If op = "*" Then
-            txtResultado.Text = num1 * num2
-            lstbHistorial.Items.Add(txtResultado.Text & " = " & num2 & " * " & num1)
-        End If
-
-
-        If op = "/" Then
-            If num1 = 0 Then
-                txtResultado.Text = "No se puede dividir entre 0"
-            Else
-                txtResultado.Text = num1 / num2
-                lstbHistorial.Items.Add(txtResultado.Text & " = " & num2 & " / " & num1)
             End If
-        End If
+
+            If op = "-" Then
+                txtResultado.Text = num1 - num2
+                lstbHistorial.Items.Add(num1 & " - " & num2 & " = " & txtResultado.Text)
+            End If
+
+            If op = "*" Then
+                txtResultado.Text = num1 * num2
+                lstbHistorial.Items.Add(num1 & " * " & num2 & " = " & txtResultado.Text)
+            End If
+
+            If op = "/" Then
+                If num1 = 0 Then
+                    txtResultado.Text = "No se puede dividir entre 0"
+                Else
+                    txtResultado.Text = num1 / num2
+                    lstbHistorial.Items.Add(num1 & " / " & num2 & " = " & txtResultado.Text)
+                End If
+            End If
+
 
         btnPunto.Enabled = True
 

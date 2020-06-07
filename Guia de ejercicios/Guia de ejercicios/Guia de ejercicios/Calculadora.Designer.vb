@@ -57,38 +57,43 @@ Partial Class Calculadora
         '
         'txtResultado
         '
-        Me.txtResultado.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.txtResultado.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtResultado.Enabled = False
-        Me.txtResultado.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado.ForeColor = System.Drawing.Color.Black
         Me.txtResultado.Location = New System.Drawing.Point(18, 32)
         Me.txtResultado.Multiline = True
         Me.txtResultado.Name = "txtResultado"
+        Me.txtResultado.ReadOnly = True
         Me.txtResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.txtResultado.Size = New System.Drawing.Size(410, 87)
         Me.txtResultado.TabIndex = 0
         '
         'btnCuatro
         '
+        Me.btnCuatro.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCuatro.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnCuatro.Location = New System.Drawing.Point(18, 269)
         Me.btnCuatro.Name = "btnCuatro"
         Me.btnCuatro.Size = New System.Drawing.Size(64, 42)
         Me.btnCuatro.TabIndex = 4
         Me.btnCuatro.Text = "4"
-        Me.btnCuatro.UseVisualStyleBackColor = True
+        Me.btnCuatro.UseVisualStyleBackColor = False
         '
         'btnSiete
         '
+        Me.btnSiete.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnSiete.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSiete.Location = New System.Drawing.Point(18, 210)
         Me.btnSiete.Name = "btnSiete"
         Me.btnSiete.Size = New System.Drawing.Size(64, 42)
         Me.btnSiete.TabIndex = 3
         Me.btnSiete.Text = "7"
-        Me.btnSiete.UseVisualStyleBackColor = True
+        Me.btnSiete.UseVisualStyleBackColor = False
         '
         'btnCero
         '
+        Me.btnCero.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCero.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnCero.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCero.Location = New System.Drawing.Point(18, 386)
@@ -96,20 +101,22 @@ Partial Class Calculadora
         Me.btnCero.Size = New System.Drawing.Size(154, 42)
         Me.btnCero.TabIndex = 6
         Me.btnCero.Text = "0"
-        Me.btnCero.UseVisualStyleBackColor = True
+        Me.btnCero.UseVisualStyleBackColor = False
         '
         'btnUno
         '
+        Me.btnUno.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnUno.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnUno.Location = New System.Drawing.Point(18, 327)
         Me.btnUno.Name = "btnUno"
         Me.btnUno.Size = New System.Drawing.Size(64, 42)
         Me.btnUno.TabIndex = 5
         Me.btnUno.Text = "1"
-        Me.btnUno.UseVisualStyleBackColor = True
+        Me.btnUno.UseVisualStyleBackColor = False
         '
         'btnDos
         '
+        Me.btnDos.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDos.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDos.Location = New System.Drawing.Point(108, 327)
@@ -117,10 +124,11 @@ Partial Class Calculadora
         Me.btnDos.Size = New System.Drawing.Size(64, 42)
         Me.btnDos.TabIndex = 11
         Me.btnDos.Text = "2"
-        Me.btnDos.UseVisualStyleBackColor = True
+        Me.btnDos.UseVisualStyleBackColor = False
         '
         'btnCinco
         '
+        Me.btnCinco.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCinco.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnCinco.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCinco.Location = New System.Drawing.Point(108, 269)
@@ -128,10 +136,11 @@ Partial Class Calculadora
         Me.btnCinco.Size = New System.Drawing.Size(64, 42)
         Me.btnCinco.TabIndex = 10
         Me.btnCinco.Text = "5"
-        Me.btnCinco.UseVisualStyleBackColor = True
+        Me.btnCinco.UseVisualStyleBackColor = False
         '
         'Button10
         '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button10.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(108, 210)
@@ -139,10 +148,11 @@ Partial Class Calculadora
         Me.Button10.Size = New System.Drawing.Size(64, 42)
         Me.Button10.TabIndex = 9
         Me.Button10.Text = "8"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'btnPunto
         '
+        Me.btnPunto.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnPunto.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPunto.Location = New System.Drawing.Point(198, 386)
@@ -150,10 +160,11 @@ Partial Class Calculadora
         Me.btnPunto.Size = New System.Drawing.Size(64, 42)
         Me.btnPunto.TabIndex = 18
         Me.btnPunto.Text = "."
-        Me.btnPunto.UseVisualStyleBackColor = True
+        Me.btnPunto.UseVisualStyleBackColor = False
         '
         'btnTres
         '
+        Me.btnTres.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnTres.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTres.Location = New System.Drawing.Point(198, 327)
@@ -161,10 +172,11 @@ Partial Class Calculadora
         Me.btnTres.Size = New System.Drawing.Size(64, 42)
         Me.btnTres.TabIndex = 17
         Me.btnTres.Text = "3"
-        Me.btnTres.UseVisualStyleBackColor = True
+        Me.btnTres.UseVisualStyleBackColor = False
         '
         'btnSeis
         '
+        Me.btnSeis.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnSeis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSeis.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSeis.Location = New System.Drawing.Point(198, 269)
@@ -172,10 +184,11 @@ Partial Class Calculadora
         Me.btnSeis.Size = New System.Drawing.Size(64, 42)
         Me.btnSeis.TabIndex = 16
         Me.btnSeis.Text = "6"
-        Me.btnSeis.UseVisualStyleBackColor = True
+        Me.btnSeis.UseVisualStyleBackColor = False
         '
         'Button16
         '
+        Me.Button16.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button16.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(198, 210)
@@ -183,11 +196,13 @@ Partial Class Calculadora
         Me.Button16.Size = New System.Drawing.Size(64, 42)
         Me.Button16.TabIndex = 15
         Me.Button16.Text = "9"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.Button16.UseVisualStyleBackColor = False
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.BackColor = System.Drawing.Color.Red
+        Me.btnLimpiar.BackColor = System.Drawing.Color.DarkRed
+        Me.btnLimpiar.BackgroundImage = CType(resources.GetObject("btnLimpiar.BackgroundImage"), System.Drawing.Image)
+        Me.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLimpiar.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLimpiar.Location = New System.Drawing.Point(283, 149)
@@ -199,6 +214,7 @@ Partial Class Calculadora
         '
         'btnSuma
         '
+        Me.btnSuma.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnSuma.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSuma.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSuma.Location = New System.Drawing.Point(283, 386)
@@ -206,10 +222,11 @@ Partial Class Calculadora
         Me.btnSuma.Size = New System.Drawing.Size(64, 42)
         Me.btnSuma.TabIndex = 24
         Me.btnSuma.Text = "+"
-        Me.btnSuma.UseVisualStyleBackColor = True
+        Me.btnSuma.UseVisualStyleBackColor = False
         '
         'btnResta
         '
+        Me.btnResta.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnResta.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnResta.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnResta.Location = New System.Drawing.Point(364, 269)
@@ -217,10 +234,11 @@ Partial Class Calculadora
         Me.btnResta.Size = New System.Drawing.Size(64, 42)
         Me.btnResta.TabIndex = 23
         Me.btnResta.Text = "-"
-        Me.btnResta.UseVisualStyleBackColor = True
+        Me.btnResta.UseVisualStyleBackColor = False
         '
         'btnMultiplicacion
         '
+        Me.btnMultiplicacion.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMultiplicacion.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnMultiplicacion.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMultiplicacion.Location = New System.Drawing.Point(283, 269)
@@ -228,10 +246,11 @@ Partial Class Calculadora
         Me.btnMultiplicacion.Size = New System.Drawing.Size(64, 42)
         Me.btnMultiplicacion.TabIndex = 22
         Me.btnMultiplicacion.Text = "*"
-        Me.btnMultiplicacion.UseVisualStyleBackColor = True
+        Me.btnMultiplicacion.UseVisualStyleBackColor = False
         '
         'btnDivision
         '
+        Me.btnDivision.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDivision.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDivision.Location = New System.Drawing.Point(283, 210)
@@ -239,10 +258,11 @@ Partial Class Calculadora
         Me.btnDivision.Size = New System.Drawing.Size(64, 42)
         Me.btnDivision.TabIndex = 21
         Me.btnDivision.Text = "/"
-        Me.btnDivision.UseVisualStyleBackColor = True
+        Me.btnDivision.UseVisualStyleBackColor = False
         '
         'btnMasMenos
         '
+        Me.btnMasMenos.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMasMenos.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnMasMenos.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMasMenos.Location = New System.Drawing.Point(283, 327)
@@ -250,7 +270,7 @@ Partial Class Calculadora
         Me.btnMasMenos.Size = New System.Drawing.Size(64, 42)
         Me.btnMasMenos.TabIndex = 20
         Me.btnMasMenos.Text = "+/-"
-        Me.btnMasMenos.UseVisualStyleBackColor = True
+        Me.btnMasMenos.UseVisualStyleBackColor = False
         '
         'btnIgual
         '
@@ -266,6 +286,7 @@ Partial Class Calculadora
         '
         'btnRaiz
         '
+        Me.btnRaiz.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnRaiz.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnRaiz.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRaiz.Location = New System.Drawing.Point(364, 210)
@@ -273,11 +294,11 @@ Partial Class Calculadora
         Me.btnRaiz.Size = New System.Drawing.Size(64, 42)
         Me.btnRaiz.TabIndex = 26
         Me.btnRaiz.Text = "√"
-        Me.btnRaiz.UseVisualStyleBackColor = True
+        Me.btnRaiz.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.SalirTodo)
         Me.GroupBox1.Controls.Add(Me.btnIgual)
         Me.GroupBox1.Controls.Add(Me.txtResultado)
@@ -301,6 +322,7 @@ Partial Class Calculadora
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox1.Location = New System.Drawing.Point(12, 40)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(447, 444)
@@ -310,7 +332,9 @@ Partial Class Calculadora
         '
         'SalirTodo
         '
-        Me.SalirTodo.BackColor = System.Drawing.Color.Red
+        Me.SalirTodo.BackColor = System.Drawing.Color.DarkRed
+        Me.SalirTodo.BackgroundImage = CType(resources.GetObject("SalirTodo.BackgroundImage"), System.Drawing.Image)
+        Me.SalirTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SalirTodo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.SalirTodo.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SalirTodo.Location = New System.Drawing.Point(18, 149)
@@ -322,26 +346,33 @@ Partial Class Calculadora
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
+        Me.MenuStrip1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegresarAlMenuPrincipalToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(834, 28)
+        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.MenuStrip1.Size = New System.Drawing.Size(834, 31)
         Me.MenuStrip1.TabIndex = 31
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegresarAlMenuPrincipalToolStripMenuItem
         '
+        Me.RegresarAlMenuPrincipalToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.RegresarAlMenuPrincipalToolStripMenuItem.ForeColor = System.Drawing.Color.Brown
         Me.RegresarAlMenuPrincipalToolStripMenuItem.Name = "RegresarAlMenuPrincipalToolStripMenuItem"
-        Me.RegresarAlMenuPrincipalToolStripMenuItem.Size = New System.Drawing.Size(200, 24)
+        Me.RegresarAlMenuPrincipalToolStripMenuItem.Size = New System.Drawing.Size(253, 27)
         Me.RegresarAlMenuPrincipalToolStripMenuItem.Text = "Regresar al menu principal"
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.btnLimpiarHistorial)
         Me.GroupBox2.Controls.Add(Me.lstbHistorial)
         Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.GroupBox2.Location = New System.Drawing.Point(506, 40)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(304, 443)
@@ -351,35 +382,46 @@ Partial Class Calculadora
         '
         'btnLimpiarHistorial
         '
+        Me.btnLimpiarHistorial.BackColor = System.Drawing.Color.Maroon
+        Me.btnLimpiarHistorial.BackgroundImage = CType(resources.GetObject("btnLimpiarHistorial.BackgroundImage"), System.Drawing.Image)
+        Me.btnLimpiarHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnLimpiarHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLimpiarHistorial.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLimpiarHistorial.Location = New System.Drawing.Point(93, 371)
         Me.btnLimpiarHistorial.Name = "btnLimpiarHistorial"
-        Me.btnLimpiarHistorial.Size = New System.Drawing.Size(115, 57)
+        Me.btnLimpiarHistorial.Size = New System.Drawing.Size(131, 57)
         Me.btnLimpiarHistorial.TabIndex = 1
         Me.btnLimpiarHistorial.Text = "Limpiar Historial"
-        Me.btnLimpiarHistorial.UseVisualStyleBackColor = True
+        Me.btnLimpiarHistorial.UseVisualStyleBackColor = False
         '
         'lstbHistorial
         '
-        Me.lstbHistorial.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstbHistorial.BackColor = System.Drawing.Color.Black
+        Me.lstbHistorial.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstbHistorial.ForeColor = System.Drawing.Color.Aqua
         Me.lstbHistorial.FormattingEnabled = True
-        Me.lstbHistorial.ItemHeight = 20
+        Me.lstbHistorial.ItemHeight = 26
         Me.lstbHistorial.Location = New System.Drawing.Point(22, 25)
         Me.lstbHistorial.Name = "lstbHistorial"
-        Me.lstbHistorial.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.lstbHistorial.Size = New System.Drawing.Size(263, 324)
+        Me.lstbHistorial.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lstbHistorial.Size = New System.Drawing.Size(263, 316)
         Me.lstbHistorial.TabIndex = 0
         '
         'Calculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(834, 499)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MinimizeBox = False
         Me.Name = "Calculadora"
         Me.Text = "Calculadora"
         Me.GroupBox1.ResumeLayout(False)
