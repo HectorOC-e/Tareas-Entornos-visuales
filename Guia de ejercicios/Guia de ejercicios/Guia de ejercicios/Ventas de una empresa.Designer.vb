@@ -130,7 +130,7 @@ Partial Class Ventas_de_una_empresa
         Me.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Olive
         Me.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregar.Location = New System.Drawing.Point(79, 80)
+        Me.btnAgregar.Location = New System.Drawing.Point(79, 81)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(118, 62)
         Me.btnAgregar.TabIndex = 2
