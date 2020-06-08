@@ -58,6 +58,7 @@ Partial Class Calculadora
         'txtResultado
         '
         Me.txtResultado.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtResultado.Enabled = False
         Me.txtResultado.Font = New System.Drawing.Font("Times New Roman", 22.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtResultado.ForeColor = System.Drawing.Color.Black

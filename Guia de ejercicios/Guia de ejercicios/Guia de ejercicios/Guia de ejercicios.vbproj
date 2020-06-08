@@ -79,6 +79,18 @@
     <Compile Include="Calculadora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="cantidadXnumeros.Designer.vb">
+      <DependentUpon>cantidadXnumeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cantidadXnumeros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeduccionOexento.Designer.vb">
+      <DependentUpon>DeduccionOexento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeduccionOexento.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formula Cuadratica.Designer.vb">
       <DependentUpon>Formula Cuadratica.vb</DependentUpon>
     </Compile>
@@ -107,10 +119,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ventas de una empresa.Designer.vb">
+      <DependentUpon>Ventas de una empresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas de una empresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cantidadXnumeros.resx">
+      <DependentUpon>cantidadXnumeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeduccionOexento.resx">
+      <DependentUpon>DeduccionOexento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formula Cuadratica.resx">
       <DependentUpon>Formula Cuadratica.vb</DependentUpon>
@@ -123,6 +147,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas de una empresa.resx">
+      <DependentUpon>Ventas de una empresa.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

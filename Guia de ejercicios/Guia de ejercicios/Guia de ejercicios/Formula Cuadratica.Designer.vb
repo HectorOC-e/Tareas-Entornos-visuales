@@ -36,15 +36,20 @@ Partial Class Formula_Cuadratica
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtResultado = New System.Windows.Forms.TextBox()
-        Me.btnCalcular = New System.Windows.Forms.Button()
-        Me.btnLimpiar = New System.Windows.Forms.Button()
-        Me.btnSalirTodo = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtResultado2 = New System.Windows.Forms.TextBox()
+        Me.btnSalirTodo = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.txtResultado1 = New System.Windows.Forms.TextBox()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -80,7 +85,7 @@ Partial Class Formula_Cuadratica
         'txtValorx2
         '
         Me.txtValorx2.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtValorx2.Location = New System.Drawing.Point(74, 107)
+        Me.txtValorx2.Location = New System.Drawing.Point(28, 107)
         Me.txtValorx2.Name = "txtValorx2"
         Me.txtValorx2.Size = New System.Drawing.Size(77, 30)
         Me.txtValorx2.TabIndex = 2
@@ -88,7 +93,7 @@ Partial Class Formula_Cuadratica
         'txtValorx
         '
         Me.txtValorx.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtValorx.Location = New System.Drawing.Point(194, 108)
+        Me.txtValorx.Location = New System.Drawing.Point(172, 108)
         Me.txtValorx.Name = "txtValorx"
         Me.txtValorx.Size = New System.Drawing.Size(72, 30)
         Me.txtValorx.TabIndex = 3
@@ -119,7 +124,7 @@ Partial Class Formula_Cuadratica
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Crimson
-        Me.Label2.Location = New System.Drawing.Point(157, 107)
+        Me.Label2.Location = New System.Drawing.Point(111, 107)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(24, 28)
         Me.Label2.TabIndex = 6
@@ -131,7 +136,7 @@ Partial Class Formula_Cuadratica
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Crimson
-        Me.Label3.Location = New System.Drawing.Point(272, 107)
+        Me.Label3.Location = New System.Drawing.Point(250, 107)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(24, 28)
         Me.Label3.TabIndex = 7
@@ -184,64 +189,16 @@ Partial Class Formula_Cuadratica
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Valores"
         '
-        'GroupBox2
+        'Label7
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox2.Controls.Add(Me.btnSalirTodo)
-        Me.GroupBox2.Controls.Add(Me.btnLimpiar)
-        Me.GroupBox2.Controls.Add(Me.txtResultado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.AliceBlue
-        Me.GroupBox2.Location = New System.Drawing.Point(60, 313)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(647, 168)
-        Me.GroupBox2.TabIndex = 11
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Resultado"
-        '
-        'txtResultado
-        '
-        Me.txtResultado.Location = New System.Drawing.Point(74, 38)
-        Me.txtResultado.Multiline = True
-        Me.txtResultado.Name = "txtResultado"
-        Me.txtResultado.Size = New System.Drawing.Size(222, 105)
-        Me.txtResultado.TabIndex = 12
-        '
-        'btnCalcular
-        '
-        Me.btnCalcular.BackColor = System.Drawing.Color.MidnightBlue
-        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnCalcular.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalcular.Location = New System.Drawing.Point(513, 60)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(100, 55)
-        Me.btnCalcular.TabIndex = 12
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = False
-        '
-        'btnLimpiar
-        '
-        Me.btnLimpiar.BackColor = System.Drawing.Color.SlateGray
-        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnLimpiar.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLimpiar.Location = New System.Drawing.Point(354, 65)
-        Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(100, 55)
-        Me.btnLimpiar.TabIndex = 13
-        Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = False
-        '
-        'btnSalirTodo
-        '
-        Me.btnSalirTodo.BackColor = System.Drawing.Color.Maroon
-        Me.btnSalirTodo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSalirTodo.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalirTodo.Location = New System.Drawing.Point(513, 65)
-        Me.btnSalirTodo.Name = "btnSalirTodo"
-        Me.btnSalirTodo.Size = New System.Drawing.Size(100, 55)
-        Me.btnSalirTodo.TabIndex = 14
-        Me.btnSalirTodo.Text = "Salir todo"
-        Me.btnSalirTodo.UseVisualStyleBackColor = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Crimson
+        Me.Label7.Location = New System.Drawing.Point(129, 104)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(16, 18)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "2"
         '
         'Label6
         '
@@ -254,16 +211,140 @@ Partial Class Formula_Cuadratica
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "2"
         '
-        'Label7
+        'btnCalcular
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Crimson
-        Me.Label7.Location = New System.Drawing.Point(175, 104)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(16, 18)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "2"
+        Me.btnCalcular.BackColor = System.Drawing.Color.Transparent
+        Me.btnCalcular.FlatAppearance.BorderColor = System.Drawing.Color.Aqua
+        Me.btnCalcular.FlatAppearance.BorderSize = 2
+        Me.btnCalcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua
+        Me.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
+        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCalcular.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalcular.Location = New System.Drawing.Point(513, 60)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(110, 55)
+        Me.btnCalcular.TabIndex = 12
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.txtResultado2)
+        Me.GroupBox2.Controls.Add(Me.btnSalirTodo)
+        Me.GroupBox2.Controls.Add(Me.btnLimpiar)
+        Me.GroupBox2.Controls.Add(Me.txtResultado1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.AliceBlue
+        Me.GroupBox2.Location = New System.Drawing.Point(60, 313)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(647, 168)
+        Me.GroupBox2.TabIndex = 11
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Resultado"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Crimson
+        Me.Label10.Location = New System.Drawing.Point(41, 125)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(24, 28)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "2"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Crimson
+        Me.Label11.Location = New System.Drawing.Point(23, 105)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(30, 34)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "x"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Crimson
+        Me.Label8.Location = New System.Drawing.Point(41, 61)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(24, 28)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "1"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Crimson
+        Me.Label9.Location = New System.Drawing.Point(23, 46)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(30, 34)
+        Me.Label9.TabIndex = 16
+        Me.Label9.Text = "x"
+        '
+        'txtResultado2
+        '
+        Me.txtResultado2.Enabled = False
+        Me.txtResultado2.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado2.ForeColor = System.Drawing.Color.Aqua
+        Me.txtResultado2.Location = New System.Drawing.Point(74, 102)
+        Me.txtResultado2.Multiline = True
+        Me.txtResultado2.Name = "txtResultado2"
+        Me.txtResultado2.Size = New System.Drawing.Size(245, 49)
+        Me.txtResultado2.TabIndex = 15
+        '
+        'btnSalirTodo
+        '
+        Me.btnSalirTodo.BackColor = System.Drawing.Color.Transparent
+        Me.btnSalirTodo.FlatAppearance.BorderColor = System.Drawing.Color.Red
+        Me.btnSalirTodo.FlatAppearance.BorderSize = 2
+        Me.btnSalirTodo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.btnSalirTodo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
+        Me.btnSalirTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalirTodo.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalirTodo.Location = New System.Drawing.Point(513, 65)
+        Me.btnSalirTodo.Name = "btnSalirTodo"
+        Me.btnSalirTodo.Size = New System.Drawing.Size(100, 55)
+        Me.btnSalirTodo.TabIndex = 14
+        Me.btnSalirTodo.Text = "Salir todo"
+        Me.btnSalirTodo.UseVisualStyleBackColor = False
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.BackColor = System.Drawing.Color.Transparent
+        Me.btnLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Lime
+        Me.btnLimpiar.FlatAppearance.BorderSize = 2
+        Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.Location = New System.Drawing.Point(354, 65)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(100, 55)
+        Me.btnLimpiar.TabIndex = 13
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = False
+        '
+        'txtResultado1
+        '
+        Me.txtResultado1.Enabled = False
+        Me.txtResultado1.Font = New System.Drawing.Font("Times New Roman", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtResultado1.ForeColor = System.Drawing.Color.Aqua
+        Me.txtResultado1.Location = New System.Drawing.Point(74, 38)
+        Me.txtResultado1.Multiline = True
+        Me.txtResultado1.Name = "txtResultado1"
+        Me.txtResultado1.Size = New System.Drawing.Size(245, 49)
+        Me.txtResultado1.TabIndex = 12
         '
         'ErrorValidacion
         '
@@ -315,7 +396,12 @@ Partial Class Formula_Cuadratica
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents btnSalirTodo As Button
     Friend WithEvents btnLimpiar As Button
-    Friend WithEvents txtResultado As TextBox
-    Friend WithEvents ErrorValidacion As ErrorProvider
+    Friend WithEvents txtResultado1 As TextBox
     Friend WithEvents ToolTip As ToolTip
+    Friend WithEvents ErrorValidacion As ErrorProvider
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtResultado2 As TextBox
 End Class

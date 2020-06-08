@@ -27,15 +27,15 @@ Partial Class MenuPrincipal
         Me.CalculadoraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CalculadoraCientificaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FormulaCuadraticaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NumerosImparesYParesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NumerosImparesYParesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NumerosImparesYParesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,20 +83,6 @@ Partial Class MenuPrincipal
         Me.FormulaCuadraticaToolStripMenuItem.Size = New System.Drawing.Size(429, 36)
         Me.FormulaCuadraticaToolStripMenuItem.Text = "Formula Cuadratica"
         '
-        'VentasMensualesDeUnaEmpresaToolStripMenuItem
-        '
-        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Name = "VentasMensualesDeUnaEmpresaToolStripMenuItem"
-        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Size = New System.Drawing.Size(415, 262)
-        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Text = "Ventas mensuales de una empresa"
-        '
-        'NumerosImparesYParesToolStripMenuItem
-        '
-        Me.NumerosImparesYParesToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumerosImparesYParesToolStripMenuItem.Name = "NumerosImparesYParesToolStripMenuItem"
-        Me.NumerosImparesYParesToolStripMenuItem.Size = New System.Drawing.Size(411, 262)
-        Me.NumerosImparesYParesToolStripMenuItem.Text = "Deduccion o exento de un salario"
-        '
         'NumerosImparesYParesToolStripMenuItem1
         '
         Me.NumerosImparesYParesToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -106,28 +92,6 @@ Partial Class MenuPrincipal
         Me.NumerosImparesYParesToolStripMenuItem1.Name = "NumerosImparesYParesToolStripMenuItem1"
         Me.NumerosImparesYParesToolStripMenuItem1.Size = New System.Drawing.Size(429, 36)
         Me.NumerosImparesYParesToolStripMenuItem1.Text = "numeros +/- impares y pares"
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(415, 262)
-        Me.ToolStripMenuItem1.Text = "Ventas mensuales de una empresa"
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(411, 262)
-        Me.ToolStripMenuItem2.Text = "Deduccion o exento de un salario"
-        '
-        'ToolStripMenuItem3
-        '
-        Me.ToolStripMenuItem3.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(415, 262)
-        Me.ToolStripMenuItem3.Text = "Ventas mensuales de una empresa"
         '
         'ToolStripMenuItem4
         '
@@ -139,13 +103,6 @@ Partial Class MenuPrincipal
         Me.ToolStripMenuItem4.Size = New System.Drawing.Size(411, 262)
         Me.ToolStripMenuItem4.Text = "Deduccion o exento de un salario"
         '
-        'ToolStripMenuItem5
-        '
-        Me.ToolStripMenuItem5.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(411, 262)
-        Me.ToolStripMenuItem5.Text = "Deduccion o exento de un salario"
-        '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.BackgroundImage = CType(resources.GetObject("ToolStripMenuItem6.BackgroundImage"), System.Drawing.Image)
@@ -155,6 +112,49 @@ Partial Class MenuPrincipal
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
         Me.ToolStripMenuItem6.Size = New System.Drawing.Size(415, 262)
         Me.ToolStripMenuItem6.Text = "Ventas mensuales de una empresa"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(411, 262)
+        Me.ToolStripMenuItem5.Text = "Deduccion o exento de un salario"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(415, 262)
+        Me.ToolStripMenuItem3.Text = "Ventas mensuales de una empresa"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(411, 262)
+        Me.ToolStripMenuItem2.Text = "Deduccion o exento de un salario"
+        '
+        'VentasMensualesDeUnaEmpresaToolStripMenuItem
+        '
+        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Name = "VentasMensualesDeUnaEmpresaToolStripMenuItem"
+        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Size = New System.Drawing.Size(415, 262)
+        Me.VentasMensualesDeUnaEmpresaToolStripMenuItem.Text = "Ventas mensuales de una empresa"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(415, 262)
+        Me.ToolStripMenuItem1.Text = "Ventas mensuales de una empresa"
+        '
+        'NumerosImparesYParesToolStripMenuItem
+        '
+        Me.NumerosImparesYParesToolStripMenuItem.Font = New System.Drawing.Font("Times New Roman", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumerosImparesYParesToolStripMenuItem.Name = "NumerosImparesYParesToolStripMenuItem"
+        Me.NumerosImparesYParesToolStripMenuItem.Size = New System.Drawing.Size(411, 262)
+        Me.NumerosImparesYParesToolStripMenuItem.Text = "Deduccion o exento de un salario"
         '
         'MenuPrincipal
         '
